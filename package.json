@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-jet",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "John's ESLint config",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/johnetrent/eslint-config-jet.git"
   },
-  "keywords": [
-    "eslint",
-    "shareable",
-    "config",
-    "javascript"
-  ],
+  "keywords": ["eslint", "shareable", "config", "javascript"],
   "author": {
     "name": "John Trent",
     "email": "john.e.trent@gmail.com",
@@ -26,10 +21,7 @@
     "url": "https://github.com/johnetrent/eslint-config-jet/issues"
   },
   "homepage": "https://github.com/johnetrent/eslint-config-jet#readme",
-  "files": [
-    "index.js",
-    "rules/"
-  ],
+  "files": ["index.js", "rules/"],
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.34",
     "@babel/node": "^7.0.0-beta.34",
