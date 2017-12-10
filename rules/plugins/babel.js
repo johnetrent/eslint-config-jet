@@ -1,16 +1,18 @@
+const {ERROR, OFF} = require('../../shared');
+
 module.exports = {
-  plugins: [
-    'babel',
-  ],
+  plugins: ['babel'],
   rules: {
-    'babel/array-bracket-spacing': [2, 'never'],
-    'babel/arrow-parens': [2, 'as-needed'],
-    'babel/flow-object-type': [2, 'comma'],
-    'babel/func-params-comma-dangle': [2, 'always-multiline'],
-    'babel/generator-star-spacing': [2, {before: true, after: false}],
-    'babel/new-cap': 0,
-    'babel/no-await-in-loop': 2,
-    'babel/object-curly-spacing': [2, 'never'],
-    'babel/object-shorthand': 0,
+    'babel/array-bracket-spacing': [ERROR, 'never'],
+    'babel/arrow-parens': [ERROR, 'as-needed'],
+    'babel/flow-object-type': [ERROR, 'comma'],
+    'babel/func-params-comma-dangle': [ERROR, 'always-multiline'],
+    'babel/generator-star-spacing': [ERROR, {before: true, after: false}],
+    'babel/new-cap': OFF,
+    'babel/no-await-in-loop': ERROR,
+    'babel/no-invalid-this': ERROR,
+    'babel/object-curly-spacing': [ERROR, 'never'],
+    'babel/object-shorthand': OFF,
+    'babel/semi': ERROR,
   },
 };

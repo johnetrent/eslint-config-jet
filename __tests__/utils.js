@@ -3,7 +3,6 @@ export default function rulesTest(availableRules, definedRules) {
 }
 
 export function compareRules(availableRules, definedRules) {
-
   const missingRules = [];
   for (const rule in availableRules) {
     if (!{}.hasOwnProperty.call(definedRules, rule)) missingRules.push(rule);

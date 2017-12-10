@@ -19,7 +19,7 @@
   "author": {
     "name": "John Trent",
     "email": "john.e.trent@gmail.com",
-    "url": "http://github.com/johnetrent"
+    "url": "https://github.com/johnetrent"
   },
   "license": "MIT",
   "bugs": {
@@ -31,17 +31,23 @@
     "rules/"
   ],
   "devDependencies": {
-    "ava": "^0.16.0",
-    "babel-eslint": "^7.0.0",
-    "babel-preset-latest": "^6.16.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "babel-register": "^6.14.0",
-    "eslint": "^3.7.1",
-    "eslint-plugin-babel": "^3.3.0"
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/node": "^7.0.0-beta.34",
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "ava": "^0.24.0",
+    "babel-eslint": "^8.0.3",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.13.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "prettier": "^1.9.1"
   },
   "peerDependencies": {
-    "babel-eslint": "^7.0.0",
-    "eslint": "^3.7.1",
-    "eslint-plugin-babel": "^3.3.0"
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.13.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "prettier": "^1.9.1"
   }
 }

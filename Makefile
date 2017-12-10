@@ -1,7 +1,8 @@
-TEST_CMD := ./node_modules/.bin/ava --require ./ava-bootstrap.js -v
+BABEL_NODE := ./node_modules/.bin/babel-node
+TEST_CMD := ./node_modules/.bin/ava --verbose
 TEST_PATTERN := **/__tests__/**/*test*.js
 
 test:
-	${TEST_CMD} ${TEST_PATTERN}
+	${BABEL_NODE} ${TEST_CMD} ${TEST_PATTERN}
 
 .PHONY: test

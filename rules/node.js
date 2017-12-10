@@ -1,16 +1,19 @@
+const {ERROR, OFF} = require('../shared');
+
 module.exports = {
   env: {
     node: true,
   },
   rules: {
-    'callback-return': 2,
-    'global-require': 2,
-    'handle-callback-err': 0,
-    'no-mixed-requires': 0,
-    'no-new-require': 0,
-    'no-path-concat': 0,
-    'no-process-exit': 2,
-    'no-restricted-modules': 0,
-    'no-sync': 0,
+    'callback-return': ERROR,
+    'global-require': ERROR,
+    'handle-callback-err': OFF,
+    'no-buffer-constructor': ERROR,
+    'no-mixed-requires': OFF,
+    'no-new-require': OFF,
+    'no-path-concat': OFF,
+    'no-process-exit': ERROR,
+    'no-restricted-modules': OFF,
+    'no-sync': OFF,
   },
 };

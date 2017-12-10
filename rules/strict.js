@@ -1,5 +1,7 @@
+const {ERROR} = require('../shared');
+
 module.exports = {
   rules: {
-    strict: [2, 'global'],
+    strict: [ERROR, 'global'],
   },
 };

@@ -1,15 +1,16 @@
 import test from 'ava';
 import fs from 'fs';
 import path from 'path';
-import {rules as eslintRules} from 'eslint/conf/eslint';
+import {rules as eslintRules} from 'eslint/conf/eslint-all';
 import rulesTest from './utils';
 
-
 let definedRules = {};
-fs.readdirSync(path.join(__dirname, '..', 'rules'))
+fs
+  .readdirSync(path.join(__dirname, '..', 'rules'))
   .filter(name => name !== 'plugins')
   .forEach(name => {
-    const {rules} = require(`../rules/${name}`); // eslint-disable-line global-require
+    // eslint-disable-next-line global-require
+    const {rules} = require(`../rules/${name}`);
     definedRules = Object.assign(definedRules, rules);
   });
 
